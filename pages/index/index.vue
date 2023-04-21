@@ -1,7 +1,7 @@
 <template>
 	<view class="recommend-container page-background">
 		<view class="bg-white">
-			<cu-custom bgColor="#fff"><view slot="content" style="color: #000">Homic 音乐</view></cu-custom>
+			<cu-custom bgColor="#fff"><view slot="content" style="color: #000">网易云音乐</view></cu-custom>
 			<view class="cu-bar search">
 				<view class="search-form round">
 					<text class="cuIcon-search"></text>

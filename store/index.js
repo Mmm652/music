@@ -57,11 +57,14 @@ const store = new Vuex.Store({
 			return new Promise((resolve, reject) => {
 				login()
 					.then((res) => {
+						console.log(res);
 						if (res.account) {
 							commit("SET_USERINFO", res.account);
-						}else if(res.userId){
+						} else if (res.userId) {
 							//游客
-							commit("SET_USERINFO", {id:res.userId});
+							commit("SET_USERINFO", {
+								id: res.userId
+							});
 						}
 						setCache("COOKIE", res.cookie);
 						commit("SET_COOKIE", res.cookie);
